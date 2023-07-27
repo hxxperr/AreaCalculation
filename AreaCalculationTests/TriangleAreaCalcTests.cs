@@ -28,7 +28,7 @@ namespace AreaCalculation.Tests
             Assert.AreEqual(expected, actual);
         }
         [TestMethod()]
-        public void CalcTriangleArea_sides_2_3_4_97returned()
+        public void CalcTriangleArea_sides_2_3_4_97returnedFalse()
         {
             //arrange
             double firstSide = 2;

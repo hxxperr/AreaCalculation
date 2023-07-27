@@ -46,6 +46,25 @@
 
             return Math.Round(AreaBy3SidesAndPerimetrFormula(perimetr, firstSide, secondSide, thirdSide), 2);
         }
+        /// <summary>
+        /// Метод на проверку является ли треугольник прямоугольным
+        /// </summary>
+        /// <param name="firstLeg">первый катет</param>
+        /// <param name="secondLeg">второй катет</param>
+        /// <param name="hypotenuse">гипотенуза</param>
+        /// <returns></returns>
+        public static bool CheckRightTriangle(double firstLeg, double secondLeg, double hypotenuse)
+        {
+            if(Math.Pow(firstLeg, 2) + Math.Pow(secondLeg, 2) == Math.Pow(hypotenuse, 2))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
 
         private double AreaBy3SidesAndPerimetrFormula(double perimetr, double firstSide, double secondSide, double thirdSide)
         {

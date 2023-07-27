@@ -26,7 +26,7 @@ namespace AreaCalculation.Tests
             Assert.AreEqual(expected, actual);
         }
         [TestMethod()]
-        public void CalcCircleArea_rad_5point2_16returned()
+        public void CalcCircleArea_rad_5point2_16returnedFalse()
         {
             //arrange
             double radius = 5.2;
